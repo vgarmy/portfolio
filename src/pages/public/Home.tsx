@@ -1,4 +1,5 @@
 import AboutPreview from "../../components/home/AboutPreview";
+import FeaturedProjects from "../../components/home/FeaturedProjects";
 import Hero from "../../components/home/Hero";
 import SkillsPreview from "../../components/home/SkillsPreview";
 
@@ -8,6 +9,7 @@ function Home() {
             <Hero />
             <AboutPreview />
             <SkillsPreview />
+            <FeaturedProjects />
         </>
     );
 }
