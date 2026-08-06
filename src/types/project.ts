@@ -6,6 +6,10 @@ export type Project = {
   shortDescription: string;
   description: string;
 
+  challenge: string;
+  solution: string;
+  features: string[];
+
   image: string;
 
   technologies: string[];

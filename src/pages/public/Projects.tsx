@@ -8,8 +8,8 @@ function Projects() {
         Projects
       </h1>
 
-      <p className="mt-4 text-slate-600">
-        A selection of applications and products I've designed and developed.
+      <p className="mt-4 max-w-2xl text-slate-600">
+        A collection of web applications and digital products I have designed and developed, focusing on usability, performance and maintainable architecture.
       </p>
 
       <div className="mt-12 grid gap-8 md:grid-cols-2">
