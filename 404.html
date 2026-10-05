@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    const path = window.location.pathname;
+    const search = window.location.search;
+    const hash = window.location.hash;
+
+    sessionStorage.redirect = path + search + hash;
+
+    window.location.replace("/portfolio/");
+  </script>
+</head>
+<body>
+</body>
+</html>
