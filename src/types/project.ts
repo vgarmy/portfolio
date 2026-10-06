@@ -1,21 +1,19 @@
 export type Project = {
-  id: string;
+  id: number;
   slug: string;
-
   title: string;
-  shortDescription: string;
+  short_description: string;
   description: string;
-
   challenge: string;
   solution: string;
-  features: string[];
-
+  features: string;
   image: string;
-
-  technologies: string[];
-
-  githubUrl: string;
-  liveUrl: string;
-
-  featured: boolean;
+  technologies: string;
+  github_url: string;
+  live_url: string;
+  featured: number;
+  status: string;
+  type: string;
+  created_at: string;
+  updated_at: string;
 };
