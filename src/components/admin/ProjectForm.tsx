@@ -15,6 +15,8 @@ function ProjectForm() {
     const [githubUrl, setGithubUrl] = useState("");
     const [liveUrl, setLiveUrl] = useState("");
     const [featured, setFeatured] = useState(false);
+    const [status, setStatus] = useState("ongoing");
+    const [type, setType] = useState("frontend");
 
     const [saving, setSaving] = useState(false);
     const [message, setMessage] = useState("");
@@ -44,6 +46,8 @@ function ProjectForm() {
             githubUrl,
             liveUrl,
             featured,
+            status,
+            type
         };
 
         try {
@@ -126,6 +130,40 @@ function ProjectForm() {
                     />
                 </div>
             </div>
+
+            <div className="grid gap-6 md:grid-cols-2">
+    <div>
+        <label className="mb-2 block text-sm font-medium">
+            Status
+        </label>
+
+        <select
+            value={status}
+            onChange={e => setStatus(e.target.value)}
+            className="w-full rounded-lg border px-4 py-3"
+        >
+            <option value="ongoing">Ongoing</option>
+            <option value="completed">Completed</option>
+        </select>
+    </div>
+
+    <div>
+        <label className="mb-2 block text-sm font-medium">
+            Type
+        </label>
+
+        <select
+            value={type}
+            onChange={e => setType(e.target.value)}
+            className="w-full rounded-lg border px-4 py-3"
+        >
+            <option value="frontend">Frontend</option>
+            <option value="mentoring">Mentoring</option>
+            <option value="fullstack">Fullstack</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+</div>
 
             <div>
                 <label className="mb-2 block text-sm font-medium">
